@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My CSS */
+
+@font-face {
+    font-family: 'Retro-gaming';
+    src: url(./retro_gaming.ttf);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background: #CBCBCB;
+    font-family: 'Retro-gaming';
+    font-size: 30px;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid #929292;
+    outline: 10px solid #CBCBCB;
+}
+.container .my-span{
+    display: inline-block;
+    width: 71px;
+    height: 71px;
+    border: 2px dashed #4C4C4C;
+}
+.container img{
+    height: 75px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.blue, .green, .red{
+    display: table-cell;
+    text-align: center;
+    font-size: 50px;
+    line-height: 75px;
+    vertical-align: middle;
+}
+.blue{
+    color: #0E2FFF;
+}
+.green{
+    color: #008F00;
+}
+.red{
+    color: #FF2900;
+}
+.container .block{
+    border: none;
+    background-color: #CBCBCB;
+    box-shadow: inset 3px 3px #EBEBEB, inset -3px -3px #929292;
+    width: 72px;
+    height: 72px;
+    border-right: 3px solid #4C4C4C;
+    border-bottom: 3px solid #4C4C4C;
+}
+.hover-content{
+    display: none;
+}
+.my-span:hover .hover-content{
+    display: block;
+    width: 71px;
+    height: 71px;
+    border: 2px dashed #4C4C4C;
+}
+
+.container .hidden-left{
+    border-left: 2px solid #CBCBCB;
+}
+.container .hidden-top{
+    border-top: 2px solid #CBCBCB;
+}
+.container .hidden-right{
+    border-right: 2px solid #CBCBCB;
+}
+.container .hidden-bottom{
+    border-bottom: 2px solid #CBCBCB;
+}
